@@ -1,0 +1,260 @@
+Script started on 2025-10-01 01:18:55+06:30 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="80" LINES="52"]
+[?2004h]0;rusakov@rusakov-srv: ~[01;32mrusakov@rusakov-srv[00m:[01;34m~[00m$ ps aux
+[?2004l
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.1  0.3  23428 13996 ?        Ss   01:05   0:01 /sbin/init sp
+root           2  0.0  0.0      0     0 ?        S    01:05   0:00 [kthreadd]
+root           3  0.0  0.0      0     0 ?        S    01:05   0:00 [pool_workque
+root           4  0.0  0.0      0     0 ?        I<   01:05   0:00 [kworker/R-rc
+root           5  0.0  0.0      0     0 ?        I<   01:05   0:00 [kworker/R-sy
+root           6  0.0  0.0      0     0 ?        I<   01:05   0:00 [kworker/R-kv
+root           7  0.0  0.0      0     0 ?        I<   01:05   0:00 [kworker/R-sl
+root           8  0.0  0.0      0     0 ?        I<   01:05   0:00 [kworker/R-ne
+root          11  0.0  0.0      0     0 ?        I<   01:05   0:00 [kworker/0:0H
+root          12  0.0  0.0      0     0 ?        I    01:05   0:00 [kworker/u16:
+root          13  0.0  0.0      0     0 ?        I<   01:05   0:00 [kworker/R-mm
+root          14  0.0  0.0      0     0 ?        I    01:05   0:00 [rcu_tasks_kt
+root          15  0.0  0.0      0     0 ?        I    01:05   0:00 [rcu_tasks_ru
+root          16  0.0  0.0      0     0 ?        I    01:05   0:00 [rcu_tasks_tr
+root          17  0.0  0.0      0     0 ?        S    01:05   0:00 [ksoftirqd/0]
+root          18  0.0  0.0      0     0 ?        I    01:05   0:00 [rcu_preempt]
+root          19  0.0  0.0      0     0 ?        S    01:05   0:00 [rcu_exp_par_
+root          20  0.0  0.0      0     0 ?        S    01:05   0:00 [rcu_exp_gp_k
+root          21  0.0  0.0      0     0 ?        S    01:05   0:00 [migration/0]
+root          22  0.0  0.0      0     0 ?        S    01:05   0:00 [idle_inject/
+root          23  0.0  0.0      0     0 ?        S    01:05   0:00 [cpuhp/0]
+root          24  0.0  0.0      0     0 ?        S    01:05   0:00 [cpuhp/1]
+root          25  0.0  0.0      0     0 ?        S    01:05   0:00 [idle_inject/
+root          26  0.0  0.0      0     0 ?        S    01:05   0:00 [migration/1]
+root          27  0.0  0.0      0     0 ?        S    01:05   0:00 [ksoftirqd/1]
+root          29  0.0  0.0      0     0 ?        I<   01:05   0:00 [kworker/1:0H
+root          30  0.0  0.0      0     0 ?        S    01:05   0:00 [cpuhp/2]
+root          31  0.0  0.0      0     0 ?        S    01:05   0:00 [idle_inject/
+root          32  0.0  0.0      0     0 ?        S    01:05   0:00 [migration/2]
+root          33  0.0  0.0      0     0 ?        S    01:05   0:00 [ksoftirqd/2]
+root          34  0.0  0.0      0     0 ?        I    01:05   0:00 [kworker/2:0-
+root          35  0.0  0.0      0     0 ?        I<   01:05   0:00 [kworker/2:0H
+root          36  0.0  0.0      0     0 ?        S    01:05   0:00 [cpuhp/3]
+root          37  0.0  0.0      0     0 ?        S    01:05   0:00 [idle_inject/
+root          38  0.0  0.0      0     0 ?        S    01:05   0:00 [migration/3]
+root          39  0.0  0.0      0     0 ?        S    01:05   0:00 [ksoftirqd/3]
+root          40  0.0  0.0      0     0 ?        I    01:05   0:00 [kworker/3:0-
+root          41  0.0  0.0      0     0 ?        I<   01:05   0:00 [kworker/3:0H
+root          43  0.0  0.0      0     0 ?        I    01:05   0:00 [kworker/u18:
+root          44  0.0  0.0      0     0 ?        I    01:05   0:00 [kworker/u19:
+root          46  0.0  0.0      0     0 ?        S    01:05   0:00 [kdevtmpfs]
+root          47  0.0  0.0      0     0 ?        I<   01:05   0:00 [kworker/R-in
+root          48  0.0  0.0      0     0 ?        S    01:05   0:00 [kauditd]
+root          49  0.0  0.0      0     0 ?        S    01:05   0:00 [khungtaskd]
+root          50  0.0  0.0      0     0 ?        S    01:05   0:00 [oom_reaper]
+root          52  0.0  0.0      0     0 ?        I<   01:05   0:00 [kworker/R-wr
+root          53  0.0  0.0      0     0 ?        I    01:05   0:00 [kworker/u17:
+root          54  0.0  0.0      0     0 ?        S    01:05   0:00 [kcompactd0]
+root          55  0.0  0.0      0     0 ?        SN   01:05   0:00 [ksmd]
+root          56  0.0  0.0      0     0 ?        SN   01:05   0:00 [khugepaged]
+root          57  0.0  0.0      0     0 ?        I<   01:05   0:00 [kworker/R-ki
+root          58  0.0  0.0      0     0 ?        I<   01:05   0:00 [kworker/R-kb
+root          59  0.0  0.0      0     0 ?        I<   01:05   0:00 [kworker/R-bl
+root          60  0.0  0.0      0     0 ?        S    01:05   0:00 [irq/9-acpi]
+root          62  0.0  0.0      0     0 ?        I<   01:05   0:00 [kworker/R-tp
+root          63  0.0  0.0      0     0 ?        I<   01:05   0:00 [kworker/R-at
+root          64  0.0  0.0      0     0 ?        I<   01:05   0:00 [kworker/R-md
+root          65  0.0  0.0      0     0 ?        I<   01:05   0:00 [kworker/R-md
+root          66  0.0  0.0      0     0 ?        I<   01:05   0:00 [kworker/R-ed
+root          67  0.0  0.0      0     0 ?        I<   01:05   0:00 [kworker/R-de
+root          68  0.0  0.0      0     0 ?        S    01:05   0:00 [watchdogd]
+root          69  0.0  0.0      0     0 ?        I    01:05   0:00 [kworker/2:1-
+root          70  0.0  0.0      0     0 ?        I    01:05   0:00 [kworker/u18:
+root          71  0.0  0.0      0     0 ?        I<   01:05   0:00 [kworker/1:1H
+root          72  0.0  0.0      0     0 ?        S    01:05   0:00 [kswapd0]
+root          73  0.0  0.0      0     0 ?        S    01:05   0:00 [ecryptfs-kth
+root          74  0.0  0.0      0     0 ?        I<   01:05   0:00 [kworker/R-kt
+root          75  0.0  0.0      0     0 ?        I<   01:05   0:00 [kworker/R-ac
+root          76  0.0  0.0      0     0 ?        S    01:05   0:00 [scsi_eh_0]
+root          77  0.0  0.0      0     0 ?        I    01:05   0:00 [kworker/u18:
+root          78  0.0  0.0      0     0 ?        I<   01:05   0:00 [kworker/R-sc
+root          79  0.0  0.0      0     0 ?        S    01:05   0:00 [scsi_eh_1]
+root          80  0.0  0.0      0     0 ?        I<   01:05   0:00 [kworker/R-sc
+root          83  0.0  0.0      0     0 ?        I    01:05   0:00 [kworker/u18:
+root          84  0.0  0.0      0     0 ?        I<   01:05   0:00 [kworker/R-ml
+root          85  0.0  0.0      0     0 ?        I<   01:05   0:00 [kworker/R-ip
+root          86  0.0  0.0      0     0 ?        I    01:05   0:00 [kworker/u16:
+root          93  0.0  0.0      0     0 ?        I<   01:05   0:00 [kworker/R-ks
+root          95  0.0  0.0      0     0 ?        I    01:05   0:00 [kworker/1:2-
+root          98  0.0  0.0      0     0 ?        I<   01:05   0:00 [kworker/u21:
+root          99  0.0  0.0      0     0 ?        I<   01:05   0:00 [kworker/u22:
+root         101  0.0  0.0      0     0 ?        I<   01:05   0:00 [kworker/u24:
+root         106  0.0  0.0      0     0 ?        I    01:05   0:00 [kworker/u19:
+root         116  0.0  0.0      0     0 ?        I    01:05   0:00 [kworker/u20:
+root         118  0.0  0.0      0     0 ?        I<   01:05   0:00 [kworker/R-ch
+root         119  0.0  0.0      0     0 ?        I<   01:05   0:00 [kworker/0:1H
+root         141  0.0  0.0      0     0 ?        I    01:05   0:00 [kworker/0:2-
+root         147  0.0  0.0      0     0 ?        I<   01:05   0:00 [kworker/3:1H
+root         170  0.0  0.0      0     0 ?        I<   01:05   0:00 [kworker/2:1H
+root         175  0.0  0.0      0     0 ?        S    01:05   0:00 [scsi_eh_2]
+root         177  0.0  0.0      0     0 ?        I<   01:05   0:00 [kworker/R-sc
+root         228  0.0  0.0      0     0 ?        S    01:05   0:00 [jbd2/sda2-8]
+root         229  0.0  0.0      0     0 ?        I<   01:05   0:00 [kworker/R-ex
+root         278  0.0  0.4  50928 17252 ?        S<s  01:05   0:00 /usr/lib/syst
+root         321  0.0  0.0      0     0 ?        I    01:05   0:00 [kworker/3:3-
+root         336  0.0  0.2  30588  8280 ?        Ss   01:05   0:00 /usr/lib/syst
+root         344  0.0  0.0      0     0 ?        I    01:05   0:00 [kworker/u19:
+root         394  0.0  0.0      0     0 ?        S    01:05   0:00 [psimon]
+root         436  0.0  0.0      0     0 ?        I    01:05   0:00 [kworker/u20:
+root         445  0.0  0.0      0     0 ?        I<   01:05   0:00 [kworker/R-cr
+root         447  0.0  0.0      0     0 ?        I<   01:05   0:00 [kworker/R-ip
+root         450  0.0  0.0      0     0 ?        I    01:05   0:00 [kworker/u20:
+root         452  0.0  0.0      0     0 ?        I    01:05   0:00 [kworker/u17:
+root         466  0.0  0.0      0     0 ?        S    01:05   0:00 [irq/18-vmwgf
+root         467  0.0  0.0      0     0 ?        I<   01:05   0:00 [kworker/R-tt
+systemd+     674  0.0  0.1  17560  7528 ?        Ss   01:05   0:00 /usr/lib/syst
+systemd+     675  0.0  0.3  21584 12864 ?        Ss   01:05   0:00 /usr/lib/syst
+systemd+     787  0.0  0.1  91048  7712 ?        Ssl  01:05   0:00 /usr/lib/syst
+avahi        845  0.0  0.1   8672  4160 ?        Ss   01:05   0:00 avahi-daemon:
+message+     846  0.0  0.1  12188  6996 ?        Ss   01:05   0:00 @dbus-daemon 
+gnome-r+     850  0.0  0.3 439076 15732 ?        Ssl  01:05   0:00 /usr/libexec/
+polkitd      867  0.0  0.2 310904 10884 ?        Ssl  01:05   0:00 /usr/lib/polk
+root         868  0.0  0.1 313376  7216 ?        Ssl  01:05   0:00 /usr/libexec/
+root         871  0.1  0.9 1997100 39572 ?       Ssl  01:05   0:01 /usr/lib/snap
+root         874  0.0  0.1 313292  7448 ?        Ssl  01:05   0:00 /usr/libexec/
+root         875  0.0  0.0   9424  2732 ?        Ss   01:05   0:00 /usr/sbin/cro
+root         876  0.0  0.1 309820  6588 ?        Ssl  01:05   0:00 /usr/libexec/
+root         880  0.0  0.2  18144  8696 ?        Ss   01:05   0:00 /usr/lib/syst
+root         881  0.0  0.3 469468 14060 ?        Ssl  01:05   0:00 /usr/libexec/
+syslog       890  0.0  0.1 222564  5904 ?        Ssl  01:05   0:00 /usr/sbin/rsy
+avahi        904  0.0  0.0   8480  1528 ?        S    01:05   0:00 avahi-daemon:
+root        1186  0.0  0.4 336440 19028 ?        Ssl  01:05   0:00 /usr/sbin/Net
+root        1192  0.0  0.1  17380  6292 ?        Ss   01:05   0:00 /usr/sbin/wpa
+root        1265  0.0  0.3 318364 12424 ?        Ssl  01:05   0:00 /usr/sbin/Mod
+root        1547  0.0  0.2  38232 11780 ?        Ss   01:06   0:00 /usr/sbin/cup
+root        1560  0.0  0.5 112244 22560 ?        Ssl  01:06   0:00 /usr/bin/pyth
+root        1604  0.0  0.1  12020  7928 ?        Ss   01:06   0:00 sshd: /usr/sb
+kernoops    1682  0.0  0.0  12744  2424 ?        Ss   01:06   0:00 /usr/sbin/ker
+kernoops    1690  0.0  0.0  12744  2392 ?        Ss   01:06   0:00 /usr/sbin/ker
+cups-br+    1734  0.0  0.4 268348 19804 ?        Ssl  01:06   0:00 /usr/sbin/cup
+root        2424  0.0  0.0 355648  2516 ?        Sl   01:06   0:00 /usr/bin/VBox
+root        2426  0.0  0.0 295784  3924 ?        Sl   01:06   0:00 /usr/sbin/VBo
+root        2444  0.0  0.2 314824  9116 ?        Ssl  01:06   0:00 /usr/sbin/gdm
+root        2466  0.0  0.0      0     0 ?        S    01:06   0:00 [psimon]
+rtkit       2518  0.0  0.0  22940  3472 ?        SNsl 01:06   0:00 /usr/libexec/
+colord      2620  0.0  0.3 320060 14336 ?        Ssl  01:06   0:00 /usr/libexec/
+root        2669  0.0  0.2 390356  8908 ?        Ssl  01:06   0:00 /usr/libexec/
+root        2946  0.0  0.0      0     0 ?        I<   01:06   0:00 [kworker/u25:
+root        2947  0.0  0.0      0     0 ?        I<   01:06   0:00 [kworker/u25:
+root        2995  0.0  0.0      0     0 ?        I<   01:06   0:00 [kworker/u22:
+root        2997  0.0  0.2 242580 10132 ?        Sl   01:06   0:00 gdm-session-w
+rusakov     3008  0.0  0.3  21140 12568 ?        Ss   01:06   0:00 /usr/lib/syst
+rusakov     3014  0.0  0.0  21460  3720 ?        S    01:06   0:00 (sd-pam)
+rusakov     3025  0.0  0.3 113556 12676 ?        S<sl 01:06   0:00 /usr/bin/pipe
+rusakov     3026  0.0  0.1  97736  5896 ?        Ssl  01:06   0:00 /usr/bin/pipe
+rusakov     3030  0.0  0.4 406888 18424 ?        S<sl 01:06   0:00 /usr/bin/wire
+rusakov     3031  0.0  0.2 110256 11296 ?        S<sl 01:06   0:00 /usr/bin/pipe
+rusakov     3036  0.0  0.2 316508 10020 ?        SLsl 01:06   0:00 /usr/bin/gnom
+rusakov     3044  0.0  0.1  10716  6388 ?        Ss   01:06   0:00 /usr/bin/dbus
+rusakov     3080  0.0  0.1 610292  7232 ?        Ssl  01:06   0:00 /usr/libexec/
+rusakov     3088  0.0  0.1 309308  6112 ?        Ssl  01:06   0:00 /usr/libexec/
+root        3095  0.0  0.0   2704  1924 ?        Ss   01:06   0:00 fusermount3 -
+rusakov     3117  0.0  0.1 235668  5892 tty2     Ssl+ 01:06   0:00 /usr/libexec/
+rusakov     3121  0.0  0.4 298236 16384 tty2     Sl+  01:06   0:00 /usr/libexec/
+rusakov     3186  0.0  0.1 162652  6836 ?        Ssl  01:06   0:00 /usr/libexec/
+rusakov     3187  0.0  0.1  91548  5596 ?        Ssl  01:06   0:00 /usr/libexec/
+rusakov     3199  0.0  0.1 314256  7828 ?        Ssl  01:06   0:00 /usr/libexec/
+rusakov     3213  0.0  0.1 534472  7084 ?        Sl   01:06   0:00 /usr/libexec/
+rusakov     3217  0.0  0.4 667956 17924 ?        Ssl  01:06   0:00 /usr/libexec/
+rusakov     3254  0.0  0.1 382940  7660 ?        Sl   01:06   0:00 /usr/libexec/
+rusakov     3258  3.4 16.1 5318464 646036 ?      Ssl  01:06   0:25 /usr/bin/gnom
+rusakov     3268  0.0  0.1   9480  5200 ?        S    01:06   0:00 /usr/bin/dbus
+rusakov     3366  0.0  0.1 236068  7508 ?        Sl   01:06   0:00 /usr/libexec/
+rusakov     3401  0.0  0.4 654704 17488 ?        Sl   01:06   0:00 /usr/libexec/
+rusakov     3413  0.0  0.6 2523420 26572 ?       Sl   01:06   0:00 /usr/bin/gjs 
+rusakov     3416  0.0  0.2 388640 11972 ?        Ssl  01:06   0:00 /usr/bin/ibus
+rusakov     3420  0.0  0.1 383520  6556 ?        Ssl  01:06   0:00 /usr/libexec/
+rusakov     3424  0.0  0.5 412920 20244 ?        Ssl  01:06   0:00 /usr/libexec/
+rusakov     3426  0.0  0.3 431668 12080 ?        Ssl  01:06   0:00 /usr/libexec/
+rusakov     3428  0.0  0.1 385132  7696 ?        Ssl  01:06   0:00 /usr/libexec/
+rusakov     3430  0.0  0.4 485508 19844 ?        Ssl  01:06   0:00 /usr/libexec/
+rusakov     3431  0.0  0.6 741628 25092 ?        Ssl  01:06   0:00 /usr/libexec/
+rusakov     3432  0.0  0.6 597280 24080 ?        Ssl  01:06   0:00 /usr/libexec/
+rusakov     3434  0.0  0.2 323628 11500 ?        Ssl  01:06   0:00 /usr/libexec/
+rusakov     3437  0.0  0.1 531084  6540 ?        Ssl  01:06   0:00 /usr/libexec/
+rusakov     3439  0.0  0.1 309560  6252 ?        Ssl  01:06   0:00 /usr/libexec/
+rusakov     3440  0.0  0.2 543188 11432 ?        Ssl  01:06   0:00 /usr/libexec/
+rusakov     3441  0.0  0.1 385820  7916 ?        Ssl  01:06   0:00 /usr/libexec/
+rusakov     3442  0.0  0.2 393636  9684 ?        Ssl  01:06   0:00 /usr/libexec/
+rusakov     3443  0.0  0.5 486480 20616 ?        Ssl  01:06   0:00 /usr/libexec/
+rusakov     3447  0.0  0.1 305624  7424 ?        Sl   01:06   0:00 /usr/libexec/
+rusakov     3530  0.0  0.1 310464  7088 ?        Sl   01:06   0:00 /usr/libexec/
+rusakov     3534  0.1  0.7 421504 29260 ?        Sl   01:06   0:01 /usr/libexec/
+rusakov     3543  0.0  1.4 897452 59684 ?        Sl   01:06   0:00 /usr/libexec/
+rusakov     3610  0.0  0.1 310424  7004 ?        Sl   01:06   0:00 /usr/libexec/
+rusakov     3644  0.0  0.3 416236 15016 ?        Sl   01:06   0:00 /usr/libexec/
+rusakov     3651  0.0  1.0 592740 42420 ?        Ssl  01:06   0:00 /usr/libexec/
+rusakov     3653  0.0  0.2 463048 10940 ?        Ssl  01:06   0:00 /usr/libexec/
+rusakov     3664  0.0  0.1 310760  6812 ?        Ssl  01:06   0:00 /usr/libexec/
+rusakov     3673  0.0  0.1 309792  6492 ?        Ssl  01:06   0:00 /usr/libexec/
+rusakov     3679  0.0  0.1 389376  7876 ?        Ssl  01:06   0:00 /usr/libexec/
+rusakov     3685  0.0  0.1 309772  6252 ?        Ssl  01:06   0:00 /usr/libexec/
+rusakov     3690  0.0  0.5 546660 23956 ?        Sl   01:06   0:00 /usr/libexec/
+rusakov     3701  0.0  0.2 389124  9072 ?        Sl   01:06   0:00 /usr/libexec/
+rusakov     3703  0.0  1.7 260724 71448 ?        S    01:06   0:00 /usr/bin/Xway
+rusakov     3732  0.0  0.1 236768  7216 ?        Sl   01:06   0:00 /usr/libexec/
+rusakov     3741  0.0  0.1 230108  5440 ?        Ssl  01:06   0:00 /usr/libexec/
+rusakov     3763  0.0  0.6 890724 24144 ?        Ssl  01:06   0:00 /usr/libexec/
+rusakov     3779  0.0  0.2 535708  8460 ?        Sl   01:06   0:00 /usr/libexec/
+rusakov     3781  0.0  0.7 825440 29848 ?        Ssl  01:06   0:00 /usr/libexec/
+rusakov     3788  0.0  0.1 236304  6472 ?        Ssl  01:06   0:00 /usr/libexec/
+rusakov     3807  0.0  0.7 734816 31712 ?        SNsl 01:06   0:00 /usr/libexec/
+root        3845  0.0  0.0      0     0 ?        I<   01:06   0:00 [kworker/u23:
+rusakov     3849  0.0  0.6 2719936 26720 ?       Sl   01:06   0:00 /usr/bin/gjs 
+rusakov     3862  0.0  0.3 627876 14164 ?        Ssl  01:06   0:00 /usr/libexec/
+rusakov     3876  0.0  1.0 908568 40156 ?        Ssl  01:06   0:00 /usr/libexec/
+rusakov     3882  0.0  2.0 640852 83132 ?        Ssl  01:06   0:00 /usr/libexec/
+rusakov     3917  0.0  1.6 2947032 66992 ?       Sl   01:06   0:00 gjs /usr/shar
+rusakov     3958  0.0  0.6 417776 26124 ?        Ssl  01:06   0:00 /usr/libexec/
+rusakov     3976  0.0  0.6 267136 24340 ?        Sl   01:06   0:00 /usr/libexec/
+rusakov     3983  0.0  2.7 1413224 111484 ?      Sl   01:06   0:00 /usr/libexec/
+rusakov     3988  0.0  0.0  19492  1364 ?        S    01:06   0:00 /usr/bin/VBox
+rusakov     3999  0.0  0.8 226860 34964 ?        Sl   01:06   0:00 /usr/bin/VBox
+rusakov     4009  0.0  0.0  19492  1512 ?        S    01:06   0:00 /usr/bin/VBox
+rusakov     4014  0.0  0.0 151596  2340 ?        Sl   01:06   0:00 /usr/bin/VBox
+rusakov     4044  0.0  0.2  39136 12016 ?        Ss   01:06   0:00 /snap/snapd-d
+rusakov     4108  0.0  0.7 429620 31024 ?        Sl   01:06   0:00 /snap/snapd-d
+rusakov     4195  0.3  1.4 626016 56544 ?        Ssl  01:07   0:02 /usr/libexec/
+rusakov     4203  0.0  0.1  11152  5204 pts/0    Ss   01:07   0:00 bash
+rusakov     4217  0.0  0.6 491724 26288 ?        Sl   01:07   0:00 /usr/bin/upda
+root        4282  0.0  0.0      0     0 ?        I<   01:09   0:00 [kworker/u23:
+root        4373  0.0  0.0      0     0 ?        I    01:10   0:00 [kworker/1:3-
+root        4405  0.0  0.0      0     0 ?        I    01:11   0:00 [kworker/0:0-
+root        4427  0.0  0.0      0     0 ?        I    01:13   0:00 [kworker/u17:
+root        4431  0.0  0.0      0     0 ?        I    01:15   0:00 [kworker/u18:
+root        4436  0.0  0.0      0     0 ?        I    01:16   0:00 [kworker/u20:
+rusakov     4440  0.0  0.0   8304  2260 pts/0    S+   01:18   0:00 script ps-log
+rusakov     4441  0.0  0.1  11024  5188 pts/1    Ss   01:18   0:00 bash -i
+rusakov     4448  0.4  0.7 400396 29636 ?        SNl  01:18   0:00 /usr/libexec/
+rusakov     4454  0.0  0.1  13616  4572 pts/1    R+   01:19   0:00 ps aux
+[?2004h]0;rusakov@rusakov-srv: ~[01;32mrusakov@rusakov-srv[00m:[01;34m~[00m$ ps u
+[?2004l
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+rusakov     3117  0.0  0.1 235668  5892 tty2     Ssl+ 01:06   0:00 /usr/libexec/
+rusakov     3121  0.0  0.4 298236 16384 tty2     Sl+  01:06   0:00 /usr/libexec/
+rusakov     4203  0.0  0.1  11152  5204 pts/0    Ss   01:07   0:00 bash
+rusakov     4440  0.0  0.0   8304  2260 pts/0    S+   01:18   0:00 script ps-log
+rusakov     4441  0.0  0.1  11024  5188 pts/1    Ss   01:18   0:00 bash -i
+rusakov     4459  0.0  0.1  13616  4572 pts/1    R+   01:19   0:00 ps u
+[?2004h]0;rusakov@rusakov-srv: ~[01;32mrusakov@rusakov-srv[00m:[01;34m~[00m$ top &
+[?2004l
+[1] 4460
+[?2004h]0;rusakov@rusakov-srv: ~[01;32mrusakov@rusakov-srv[00m:[01;34m~[00m$ [?1l>kill 4460
+[?2004l
+
+[1]+  Stopped                 top
+[?2004h]0;rusakov@rusakov-srv: ~[01;32mrusakov@rusakov-srv[00m:[01;34m~[00m$ exit
+[?2004l
+exit
+There are stopped jobs.
+[?2004h]0;rusakov@rusakov-srv: ~[01;32mrusakov@rusakov-srv[00m:[01;34m~[00m$ exit
+[?2004l
+exit
+[?1l>
+
+Script done on 2025-10-01 01:19:48+06:30 [COMMAND_EXIT_CODE="1"]

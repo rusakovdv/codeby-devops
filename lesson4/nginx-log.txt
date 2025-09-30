@@ -1,0 +1,33 @@
+Script started on 2025-10-01 01:52:05+06:30 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="149" LINES="52"]
+sudo:nano;/etc/systemd/system/nginx-custom.servicesudo nano /etc/systemd/system/nginx-custom.service27m
+[sudo] password for rusakov:
+sudossystemctledaemon-reloadv@rusakov-srv00m:01;34m~00m$m7msudo1systemctlmdaemon-reload27mppend20X51;112HB0;7mM-BBmBBackup5FileK52;2HB50;61HBm?12l?25h?25l67G1KHB0;7m[-Writing...r]BmK1;99HB0;7m 148GBm50;66HB0;7m[mWrotee131lines1]Bm51;17HB0;7m^OBmeWrite Out	  B0;7m^WBm Where Is	 B0;7m^KBm Cut51;65HB0;7m^TBm Execute	   B0;7m^CBm Location	  B0;7mM-UBm Undo112G B0;7mM-ABm Set Mark    B0;7mM-]Bm To Bracket52;2HB0;7mXBm Exit  17GB0;7m^RBm Read File	B0;7m^\Bm Replace      B0;7m^UBm Paste52;65HB0;7m^JBm Justify	   B0;7m^/Bm Go To Line	  B0;7mM-EBm Redo112G B0;7mM-6Bm Copy52;129HB0;7m^QBm Where Was?12l?25h14;27H?25l
+sudo:systemctluenablernginx-customm:01;34m~00m$ 7msudo systemctl enable nginx-custom27m
+Created symlink /etc/systemd/system/multi-user.target.wants/nginx-custom.service → /etc/systemd/system/nginx-custom.service.
+udovsystemctlrstartvnginx-custom00m:01;34m~00m$ 7mudo systemctl start nginx-custom27m
+Command 'udo' not found, but can be installed with:
+sudo apt install udo
+?2004h0;rusakov@rusakov-srv: ~01;32mrusakov@rusakov-srv00m:01;34m~00m$ 1@s systemctl start nginx-custom
+sudo:systemctlustatusrnginx-customm:01;34m~00m$ 7msudo systemctl status nginx-custom27m
+0;1;32m●0m nginx-custom.service - NGINX HTTP Serverm
+     Loaded: loaded (8;;file://rusakov-srv/etc/systemd/system/nginx-custom.service/etc/systemd/system/nginx-custom.service8;;; 0;1;32menabled0m; preset: 0;1;32menabled0m)m
+     Active: 0;1;32mactive (running)0m since Wed 2025-10-01 01:53:07 +0630; 16s agom
+    Process: 7118 ExecStart=/usr/sbin/nginx (code=exited, status=0/SUCCESS)m
+   Main PID: 7119 (nginx)m
+      Tasks: 5 (limit: 4603)m
+     Memory: 3.7M (peak: 4.2M)m
+	CPU: 9msm
+     CGroup: /system.slice/nginx-custom.servicem
+	     ├─0;38;5;245m7119 "nginx: master process /usr/sbin/nginx"0mm
+	     ├─0;38;5;245m7120 "nginx: worker process"0mm
+	     ├─0;38;5;245m7121 "nginx: worker process"0mm
+	     ├─0;38;5;245m7122 "nginx: worker process"0mm
+	     └─0;38;5;245m7124 "nginx: worker process"0mm
+m
+Oct 01 01:53:07 rusakov-srv systemd[1]: Starting nginx-custom.service - NGINX HTTP Server...m
+Oct 01 01:53:07 rusakov-srv systemd[1]: Started nginx-custom.service - NGINX HTTP Server.m
+Oct 01 01:53:23 rusakov-srv systemd[1]: 0;1;38;5;185m0;1;39m0;1;38;5;185m8;;file://rusakov-srv/etc/systemd/system/nginx-custom.service/etc/systemd/system/nginx-custom.service8;;:1: Assignment outside of section. Ignoring.0mm
+K?1l?2004h0;rusakov@rusakov-srv: ~01;32mrusakov@rusakov-srv00m:01;34m~00m$ exit
+exit4l
+
+Script done on 2025-10-01 01:53:40+06:30 [COMMAND_EXIT_CODE="0"]
