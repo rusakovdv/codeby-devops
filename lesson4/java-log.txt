@@ -1,0 +1,31 @@
+Script started on 2025-10-01 01:42:03+06:30 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="149" LINES="52"]
+[?2004h]0;rusakov@rusakov-srv: ~[01;32mrusakov@rusakov-srv[00m:[01;34m~[00m$ java -version
+[?2004l
+java version "17.0.12" 2024-07-16 LTS
+Java(TM) SE Runtime Environment (build 17.0.12+8-LTS-286)
+Java HotSpot(TM) 64-Bit Server VM (build 17.0.12+8-LTS-286, mixed mode, sharing)
+[?2004h]0;rusakov@rusakov-srv: ~[01;32mrusakov@rusakov-srv[00m:[01;34m~[00m$ [7msudo update-alternatives --config java[27m
+[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csudo update-alternatives --config java
+[?2004l
+[sudo] password for rusakov: 
+There are 2 choices for the alternative java (providing /usr/bin/java).
+
+  Selection    Path                                         Priority   Status
+------------------------------------------------------------
+* 0            /usr/lib/jvm/jdk-17.0.12/bin/java             2         auto mode
+  1            /usr/lib/jvm/java-11-openjdk-amd64/bin/java   1         manual mode
+  2            /usr/lib/jvm/jdk-17.0.12/bin/java             2         manual mode
+
+Press <enter> to keep the current choice[*], or type selection number: 1
+update-alternatives: using /usr/lib/jvm/java-11-openjdk-amd64/bin/java to provide /usr/bin/java (java) in manual mode
+[?2004h]0;rusakov@rusakov-srv: ~[01;32mrusakov@rusakov-srv[00m:[01;34m~[00m$ sudo update-alternatives --config java
+[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[25Pjava -version
+[?2004l
+openjdk version "11.0.28" 2025-07-15
+OpenJDK Runtime Environment (build 11.0.28+6-post-Ubuntu-1ubuntu124.04.1)
+OpenJDK 64-Bit Server VM (build 11.0.28+6-post-Ubuntu-1ubuntu124.04.1, mixed mode, sharing)
+[?2004h]0;rusakov@rusakov-srv: ~[01;32mrusakov@rusakov-srv[00m:[01;34m~[00m$ exit
+[?2004l
+exit
+
+Script done on 2025-10-01 01:42:42+06:30 [COMMAND_EXIT_CODE="0"]
