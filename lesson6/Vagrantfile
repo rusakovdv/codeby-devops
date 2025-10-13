@@ -1,0 +1,17 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+Vagrant.configure("2") do |config|
+  config.vm.box = "ubuntu/trusty64"
+  config.vm.boot_timeout = 600
+  config.vm.define "client" do |client|
+    client.vm.hostname = "client"
+    client.vm.network "private_network", ip: "192.168.56.11"
+    client.vm.provision "shell", path: "client.sh"
+  end
+  config.vm.define "server" do |server|
+    server.vm.hostname = "server"
+    server.vm.network "private_network", ip: "192.168.56.10"
+    server.vm.provision "shell", path: "server.sh"
+  end
+end
