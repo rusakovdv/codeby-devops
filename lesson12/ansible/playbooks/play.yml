@@ -1,0 +1,26 @@
+---
+- name: Install and configure common packages
+  hosts: all
+  become: true
+  tasks:
+    - name: Update apt cache
+      apt:
+        update_cache: yes
+
+    - name: Install required packages
+      package:
+        name:
+          - wget
+          - htop
+          - nginx
+        state: present
+
+    - name: Start and enable Nginx
+      service:
+        name: nginx
+        state: started
+        enabled: yes
+
+    - name: Display environment message
+      debug:
+        msg: "This host is in {{ env }} environment"
