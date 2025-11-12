@@ -1,0 +1,27 @@
+---
+- hosts: all
+  become: yes
+  roles:
+    - mysql
+    - apache
+
+  tasks:
+    - name: Download and unpack WordPress
+      unarchive:
+        src: https://wordpress.org/latest.tar.gz
+        dest: /var/www/html/
+        remote_src: yes
+        creates: /var/www/html/wordpress
+
+    - name: Configure wp-config.php
+      template:
+        src: wp-config.php.j2
+        dest: /var/www/html/wordpress/wp-config.php
+
+    - name: Set correct ownership for WordPress files
+      file:
+        path: /var/www/html/wordpress
+        state: directory
+        recurse: yes
+        owner: "{{ 'apache' if ansible_os_family == 'RedHat' else 'www-data' }}"
+        group: "{{ 'apache' if ansible_os_family == 'RedHat' else 'www-data' }}"

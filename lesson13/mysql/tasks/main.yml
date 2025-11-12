@@ -1,0 +1,42 @@
+# tasks file for mysql
+- name: Install MySQL/MariaDB package for CentOS
+  yum:
+    name:
+      - mariadb-server
+      - pip
+    state: present
+  when: ansible_os_family == "RedHat"
+
+- name: Install MySQL/MariaDB package for Ubuntu
+  apt:
+    name:
+       - mariadb-server
+       - pip
+    state: present
+    update_cache: yes
+  when: ansible_os_family == "Debian"
+
+- name: Ensure MySQL/MariaDB service is started and enabled
+  service:
+    name: mariadb
+    state: started
+    enabled: yes
+
+- name: Install PyMySQL for Ansible mysql_user and mysql_db modules
+  pip:
+    name: pymysql
+    state: present
+
+- name: Create a new database for WordPress
+  mysql_db:
+    name: "{{ db_name }}"
+    state: present
+    login_unix_socket: /var/run/mysqld/mysqld.sock
+
+- name: Create a new user for the WordPress database
+  mysql_user:
+    name: "{{ db_user }}"
+    password: "{{ db_password }}"
+    priv: "{{ db_name }}.*:ALL"
+    state: present
+    login_unix_socket: /var/run/mysqld/mysqld.sock
