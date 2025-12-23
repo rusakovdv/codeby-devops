@@ -1,0 +1,51 @@
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: {{ .Release.Name }}-mysql-pv-local
+  labels:
+    app: mysql
+    {{- include "common.labels" . | nindent 4 }}
+spec:
+  capacity:
+    storage: {{ .Values.mysql.persistence.size }}
+  volumeMode: Filesystem
+  accessModes:
+  - ReadWriteOnce
+  persistentVolumeReclaimPolicy: Retain
+  storageClassName: {{ .Values.storage.className }}
+  local:
+    path: {{ .Values.mysql.persistence.path }}
+  nodeAffinity:
+    required:
+      nodeSelectorTerms:
+      - matchExpressions:
+        - key: kubernetes.io/hostname
+          operator: In
+          values:
+          - {{ .Values.storage.nodeName }}
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: {{ .Release.Name }}-wordpress-pv-local
+  labels:
+    app: wordpress
+    {{- include "common.labels" . | nindent 4 }}
+spec:
+  capacity:
+    storage: {{ .Values.wordpress.persistence.size }}
+  volumeMode: Filesystem
+  accessModes:
+  - ReadWriteOnce
+  persistentVolumeReclaimPolicy: Retain
+  storageClassName: {{ .Values.storage.className }}
+  local:
+    path: {{ .Values.wordpress.persistence.path }}
+  nodeAffinity:
+    required:
+      nodeSelectorTerms:
+      - matchExpressions:
+        - key: kubernetes.io/hostname
+          operator: In
+          values:
+          - {{ .Values.storage.nodeNameWp }}
