@@ -1,0 +1,42 @@
+namespace: dev
+
+storage:
+  className: "local-storage"
+  nodeName: "lesson21-claster"
+  nodeNameWp: "lesson21-claster-m02"
+
+mysql:
+  image: mysql:5.7
+  replicaCount: 1
+  service:           
+    port: 3306      
+  rootPassword: "supersecretpassword"
+  database: wordpress
+  user: wordpress
+  password: "supersecretpassword"
+  persistence:
+    size: 2Gi
+    path: "/data/mysql-data"
+
+wordpress:
+  image: wordpress:latest
+  replicaCount: 1
+  service:
+    type: NodePort
+    port: 80
+    nodePort: 30080 
+  resources:
+    requests:
+      cpu: 100m
+      memory: 256Mi
+    limits:
+      cpu: 500m
+      memory: 512Mi
+  persistence:
+    size: 2Gi
+    path: "/data/wordpress-data"
+  autoscaling:
+    enabled: true
+    minReplicas: 1
+    maxReplicas: 5
+    targetCPU: 50
