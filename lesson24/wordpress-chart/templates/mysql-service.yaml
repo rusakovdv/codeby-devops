@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ .Release.Name }}-mysql-db
+  namespace: {{ .Values.namespace }}
+  labels:
+    app: mysql
+    {{- include "common.labels" . | nindent 4 }}
+spec:
+  ports:
+  - port: {{ .Values.mysql.service.port }}
+  selector:
+    app: mysql
+    release: {{ .Release.Name }}
+  clusterIP: None
